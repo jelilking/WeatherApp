@@ -30,9 +30,10 @@ async function getWeatherData(cityValue) {
       `Wind Speed: ${data.wind.speed} m/s`,
     ];
 
-    weatherDataEl.querySelector(
-      ".icon"
-    ).innerHTML = `http://openweathermap.org/img/wn/${icon}.png`;
+    weatherDataEl.querySelector(".icon").innerHTML = `<img
+            src="http://openweathermap.org/img/wn/${icon}.png"
+            alt="Weather icon"
+          />`;
 
     weatherDataEl.querySelector(
       ".temperature"
